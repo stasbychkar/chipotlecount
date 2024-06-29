@@ -1,0 +1,342 @@
+* {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+input[type="number" i] {
+    padding-block: 0px;
+    padding-inline: 0px;
+}
+
+h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 1.5rem;
+      font-weight: normal;
+      line-height: normal;
+}
+
+:root {
+    --clr-light-grey: #BEC1C7;
+    --clr-dark-grey: #45474B;
+    --clr-white: #F5F7F8;
+    --clr-yellow: #F4CE14;
+    --clr-green: #495E57;
+}
+
+body {
+    background-color: var(--clr-white);
+}
+
+/* bills inputs */
+.bills-input-div {
+    max-width: 346px; /* 370-24 */ 
+    height: 63px;
+    background-color: var(--clr-green);
+    border-radius: 32px;
+    color: var(--clr-white);
+    font-size: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+}
+
+.bills-input {
+    width: 48.5%;
+    height: 42px;
+    background-color: var(--clr-white);
+    border-radius: 0 0 30px 30px;
+    border: none;
+    color: var(--clr-green);
+    background-color: var(--clr-white);
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+.bills-input-left {
+    border-radius: 30px 3px 3px 30px;
+}
+
+.bills-input-right {
+    border-radius: 3px 30px 30px 3px;
+}
+
+.bills-inputs-container {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 267px;
+}
+
+.bills-label-div {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    margin-left: 12px;
+}
+
+/* general styles */
+input {
+    text-align: center;
+}
+
+input::placeholder {
+    color: var(--clr-light-grey);
+}
+
+/* coins inputs */
+.coins-input-div {
+    height: 158px;
+    width: 85px;
+    background-color: var(--clr-yellow);
+    display: flex;
+    flex-direction: column;
+    border-radius: 35px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.coins-inputs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+}
+
+.coins-input {
+    max-width: 68px;
+    height: 48.7px;
+}
+
+.coins-input-top {
+    border: none;
+    border-radius: 30px 30px 3px 3px;
+}
+
+.coins-input-bottom {
+    border: none;
+    border-radius: 3px 3px 30px 30px;
+}
+
+.coins-label-div {
+    font-size: 23px;
+    color: var(--clr-green);
+    margin-top: 15px;
+}
+
+.coins-inputs-container input {
+    font-size: 15px;
+    color: var(--clr-green);
+}
+
+/* .coins-input-top::placeholder {
+    position: relative;
+    top: 5px;
+}
+
+.coins-input-bottom::placeholder {
+    position: relative;
+    top: -4px;
+} */
+
+/* ---- */
+
+.coins-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+    margin-top: 10px;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    height: 85px;
+    background-color: var(--clr-yellow);
+    color: var(--clr-green);
+    font-size: 28px;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    width: 370px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h1-container {
+    background-color: var(--clr-green);
+    color: var(--clr-white);
+    font-size: 28px;
+    height: 58px;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.bills-input-div input:focus {
+    outline: 2px solid var(--clr-yellow);
+    outline-offset: -2px;
+}
+
+.coins-input-div input:focus {
+    outline: 2px solid var(--clr-green);
+    outline-offset: -2px;
+}
+
+.container {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* toggle switch */
+
+.checkbox {
+  width: 242px;
+  height: 53px;
+  background-color: var(--clr-green);
+  border-radius: 30px;
+  position: relative;
+  color: black;
+  overflow: hidden;
+}
+
+#checkbox_toggle {
+  display: none;
+}
+
+.checkbox .toggle {
+  width: 105px;
+  height: 30px;
+  position: absolute;
+  top: 11.5px;
+  border-radius: 30px;
+  left: 12px;
+  cursor: pointer;
+  background: var(--clr-yellow);
+  transition: 0.4s;
+}
+
+.checkbox .slide {
+  width: 230px;
+  height: 53px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.checkbox .slide .text {
+  font-size: 16px;
+  font-weight: 700;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.check:checked + .checkbox .slide .toggle {
+  transform: translateX(114px);
+
+}
+
+.check:checked + #text200 {
+    color: var(--clr-white);
+}
+
+/* --- */
+
+.toggle-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.toggle-text {
+    font-size: 27px;
+    color: var(--clr-green);
+}
+
+.count-btn {
+    width: 261px;
+    height: 69px;
+    border-radius: 30px;
+    background-color: var(--clr-yellow);
+    color: var(--clr-green);
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    height: 251px;
+    background-color: var(--clr-green);
+    transform: translateY(50px);
+    
+}
+
+.result-div {
+    width: 340px;
+    height: 220px;
+    background-color: var(--clr-yellow);
+    color: var(--clr-green);
+    border: 5px solid var(--clr-green);
+    border-radius: 47px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* transform: translateY(-50px); */
+    z-index: 2;
+}
+
+.result {
+    font-size: 52px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash count</title>
+    <script src="count.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container container">
+            <div class="logo-name">ChipotleCount</div>
+            <div class="logo-pepper">🌶️</div>
+        </div>
+    </header>
+    <main>
+        <div class="h1-container container">
+            <h1>💸 Cash Drawer</h1>
+        </div>
+        <form>
+            <!-- bills inputs -->
+            <div class="bills-input-div container">
+                <div class="bills-label-div">
+                    <label for="">1$</label>
+                </div>
+                <div class="bills-inputs-container">
+                    <input type="number" pattern="\d*" placeholder="count" data-coin="1" data-count="" class="count ones bills-input bills-input-left" autocomplete="off">
+                    <input type="number" placeholder="amount" data-coin="1" data-amount="" class="amount ones bills-input bills-input-right" autocomplete="off">
+                </div>
+            </div>
+            <div class="bills-input-div container">
+                <div class="bills-label-div">
+                    <label for="">5$</label>
+                </div>
+                <div class="bills-inputs-container">
+                    <input type="number" pattern="\d*" placeholder="count" data-coin="5" data-count="" class="count fives bills-input bills-input-left" autocomplete="off">
+                    <input type="number" placeholder="amount" data-coin="1" data-amount="" class="amount fives bills-input bills-input-right" autocomplete="off">
+                </div>
+            </div>
+            <div class="bills-input-div container">
+                <div class="bills-label-div">
+                    <label for="">10$</label>
+                </div>
+                <div class="bills-inputs-container">
+                    <input type="number" pattern="\d*" placeholder="count" data-coin="10" data-count="" class="count tens bills-input bills-input-left" autocomplete="off">
+                    <input type="number" placeholder="amount" data-coin="1" data-amount="" class="amount tens bills-input bills-input-right" autocomplete="off">
+                </div>
+            </div>
+            <div class="bills-input-div container">
+                <div class="bills-label-div">
+                    <label for="">20$</label>
+                </div>
+                <div class="bills-inputs-container">
+                    <input type="number" pattern="\d*" placeholder="count" data-coin="20" data-count="" class="count twenties bills-input bills-input-left" autocomplete="off">
+                    <input type="number" placeholder="amount" data-coin="1" data-amount="" class="amount twenties bills-input bills-input-right" autocomplete="off">
+                </div>
+            </div>
+            <div class="bills-input-div container">
+                <div class="bills-label-div">
+                    <label for="">100$</label>
+                </div>
+                <div class="bills-inputs-container">
+                    <input type="number" pattern="\d*" placeholder="count" data-coin="100" data-count="" class="count hundreds bills-input bills-input-left" autocomplete="off">
+                    <input type="number" placeholder="amount" data-coin="1" data-amount="" class="amount hundreds bills-input bills-input-right" autocomplete="off">
+                </div>
+            </div>
+            <!-- coins inputs -->
+            <div class="coins-container container">
+                <div class="coins-input-div">
+                    <div class="coins-label-div">
+                        <label for="">1¢</label>
+                    </div>
+                    <div class="coins-inputs-container">
+                        <input type="number" pattern="\d*" placeholder="count" data-coin="0.01" data-count="" class="count quarters coins-input coins-input-top" autocomplete="off">
+                        <input type="number" step="0.01" placeholder="amount" data-coin="1" data-amount="" class="amount quarters coins-input coins-input-bottom" autocomplete="off">
+                    </div>
+                </div>
+                <div class="coins-input-div">
+                    <div class="coins-label-div">
+                        <label for="">5¢</label>
+                    </div>
+                    <div class="coins-inputs-container">
+                        <input type="number" pattern="\d*" placeholder="count" data-coin="0.05" data-count="" class="count nickles coins-input coins-input-top" autocomplete="off">
+                        <input type="number" step="0.05" placeholder="amount" data-coin="1" data-amount="" class="amount nickles coins-input coins-input-bottom" autocomplete="off">
+                    </div>
+                </div>
+                <div class="coins-input-div">
+                    <div class="coins-label-div">
+                        <label for="">10¢</label>
+                    </div>
+                    <div class="coins-inputs-container">
+                        <input type="number" pattern="\d*" placeholder="count" data-coin="0.10" data-count="" class="count dimes coins-input coins-input-top" autocomplete="off">
+                        <input type="number" step="0.10" placeholder="amount" data-coin="1" data-amount="" class="amount dimes coins-input coins-input-bottom" autocomplete="off">
+                    </div>
+                </div>
+                <div class="coins-input-div">
+                    <div class="coins-label-div">
+                        <label for="">25¢</label>
+                    </div>
+                    <div class="coins-inputs-container">
+                        <input type="number" pattern="\d*" placeholder="count" data-coin="0.25" data-count="" class="count quarter coins-input coins-input-top" autocomplete="off">
+                        <input type="number" step="0.25" placeholder="amount" data-coin="1" data-amount="" class="amount quarter coins-input coins-input-bottom" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="toggle-section container">
+                <div class="toggle-text">
+                    Drawer:
+                </div>
+                <div class="toggle-container">
+                    <input id="checkbox_toggle" type="checkbox" class="check">
+                    <div class="checkbox">
+                    <label class="slide" for="checkbox_toggle">
+                        <label class="toggle" for="checkbox_toggle"></label>
+                        <label class="text" for="checkbox_toggle" id="text200">200$</label>
+                        <label class="text" for="checkbox_toggle" id="text300">300$</label>
+                    </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <label for="">Nickles</label>
+            <input type="text" pattern="\d*" placeholder="count" data-coin="0.05" data-count="nickles" class="count nickles" autocomplete="off">
+            <input type="text" placeholder="amount" data-coin="1" data-amount="nickles" class="amount nickles" autocomplete="off">
+            <br><label for="">Dimes</label>
+            <input type="text" pattern="\d*" placeholder="count" data-coin="0.10" data-count="dimes" class="count dimes" autocomplete="off">
+            <input type="text" placeholder="amount" data-coin="1" data-amount="dimes" class="amount dimes" autocomplete="off">
+            <br><label for="">Quarters</label>
+            <input type="text" placeholder="count" data-coin="0.25" data-count="quarters" class="count quarters" autocomplete="off">
+            <input type="text" placeholder="amount" data-coin="1" data-amount="quarters" class="amount quarters" autocomplete="off">
+            <br><br><label for="">20$ bills</label>
+            <input type="text" placeholder="count" data-coin="20" data-count="twenty" class="count twenty" autocomplete="off">
+            <input type="text" placeholder="amount" data-coin="1" data-amount="twenty" class="amount twenty" autocomplete="off">
+             -->
+            <div class="btn-container container">
+                <input type="submit" id="count_cash" value="Count!" class="count-btn">
+            </div>
+        </form>
+        <!-- <p id="result"></p> -->
+
+        <div class="result-div container">
+            <div class="result">💵 <span id="result" class="result odometer">XXX.XX</span>$</div>
+            <div>Total money: <span id="total">xxx.xx$</span></div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+<!-- <script src="odometer.js"></script> -->
+</html>
