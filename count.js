@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         let total = document.querySelector('#total');
         let result = document.querySelector('#result');
-        totalNum = cash_sum.toFixed(2)
+        totalNum = cash_sum;
         let resultNum = totalNum;
         // which drawer we are using ...
         if (document.querySelector("#checkbox_toggle").checked) {
@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
             resultNum -= 200;
         }
 
-        result.innerHTML = resultNum;
-        total.innerHTML = totalNum;
+        result.innerHTML = resultNum.toFixed(2);
+        total.innerHTML = totalNum.toFixed(2);
 
         return false;
     

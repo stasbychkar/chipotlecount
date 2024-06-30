@@ -162,7 +162,7 @@ header {
     background-color: var(--clr-yellow);
     color: var(--clr-green);
     font-size: 28px;
-    border-radius: 0 0 30px 30px;
+    /* border-radius: 0 0 20px 20px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -311,7 +311,7 @@ footer {
 }
 
 .result-div {
-    width: 340px;
+    max-width: 340px;
     height: 220px;
     background-color: var(--clr-yellow);
     color: var(--clr-green);
