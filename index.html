@@ -3,11 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chipotle Count</title>
+    <!-- IOS status bar color theme  -->
+    <meta name="theme-color" content="#F4CE14">
+    <title>CI count</title>
+    <script src="count.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p>What are we going to count?</p>
-    <a href="ci-count.html">CI</a>
-    <a href="cashcount.html">Cash Drawer</a>
+    <header>
+        <div class="header-container container">
+            <div class="logo-name">ChipotleCount</div>
+            <div class="logo-pepper">🌶️</div>
+        </div>
+    </header>
+    <div class="pages-links">
+        <a href="ci-count.html">
+            <div class="link-div">
+                <div class="img-div">
+                    <img src="imgs/cash-drawer.png" alt="Cash Drawer" class="link-img">
+                </div>
+                <div class="p-div">
+                    <span>Cash Drawer</span>
+                    <button class="go-count-btn">Count!</button>
+                </div>
+            </div>
+        </a>
+        <a href="cashcount.html">
+            <div class="link-div">
+                <div class="img-div">
+                    <img src="imgs/ci.png" alt="Cash Drawer" class="link-img" id="ci-img">
+                </div>
+                <div class="p-div">
+                    <span>Critical Items</span>
+                    <button class="go-count-btn">Count!</button>
+                </div>
+            </div>
+        </a>
+    </div>
 </body>
 </html>
