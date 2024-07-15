@@ -6,6 +6,7 @@
     margin: 0;
 }
 
+
 input[type="number" i] {
     padding-block: 0px;
     padding-inline: 0px;
@@ -134,18 +135,6 @@ input::placeholder {
     font-size: 15px;
     color: var(--clr-green);
 }
-
-/* .coins-input-top::placeholder {
-    position: relative;
-    top: 5px;
-}
-
-.coins-input-bottom::placeholder {
-    position: relative;
-    top: -4px;
-} */
-
-/* ---- */
 
 .coins-container {
     display: flex;
@@ -519,4 +508,33 @@ a {
 
 .pages-links {
     margin-top: 30px;
+}
+
+/* rollled coins + coin machine */
+
+.rolled-input-div {
+    height: 63px;
+    background-color: var(--clr-green);
+    border-radius: 32px;
+    color: var(--clr-white);
+    font-size: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.rolled-input {
+    height: 42px;
+    width: 93%;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    background-color: var(--clr-white);
+    color: var(--clr-green);
+}
+
+.rolled-input-div input:focus {
+    outline: 2px solid var(--clr-yellow);
+    outline-offset: -2px;
 }

@@ -6,6 +6,7 @@
     <!-- IOS status bar color theme  -->
     <meta name="theme-color" content="#F4CE14">
     <title>Cash count</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
     <script src="count.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -81,6 +82,9 @@
                     <input type="number" placeholder="amount" data-coin="1" data-amount="" class="amount hundreds bills-input bills-input-right" autocomplete="off">
                 </div>
             </div>
+            <div class="rolled-input-div">
+                <input type="text" inputmode="decimal" class="count rolled-input" placeholder="rolled coins | coin machine" data-coin="1" autocomplete="off">
+            </div>
             <!-- coins inputs -->
             <div class="coins-container container">
                 <div class="coins-input-div">
@@ -136,20 +140,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <label for="">Nickles</label>
-            <input type="text" pattern="\d*" placeholder="count" data-coin="0.05" data-count="nickles" class="count nickles" autocomplete="off">
-            <input type="text" placeholder="amount" data-coin="1" data-amount="nickles" class="amount nickles" autocomplete="off">
-            <br><label for="">Dimes</label>
-            <input type="text" pattern="\d*" placeholder="count" data-coin="0.10" data-count="dimes" class="count dimes" autocomplete="off">
-            <input type="text" placeholder="amount" data-coin="1" data-amount="dimes" class="amount dimes" autocomplete="off">
-            <br><label for="">Quarters</label>
-            <input type="text" placeholder="count" data-coin="0.25" data-count="quarters" class="count quarters" autocomplete="off">
-            <input type="text" placeholder="amount" data-coin="1" data-amount="quarters" class="amount quarters" autocomplete="off">
-            <br><br><label for="">20$ bills</label>
-            <input type="text" placeholder="count" data-coin="20" data-count="twenty" class="count twenty" autocomplete="off">
-            <input type="text" placeholder="amount" data-coin="1" data-amount="twenty" class="amount twenty" autocomplete="off">
-             -->
             <div class="btn-container container">
                 <input type="submit" id="count_cash" value="Count!" class="count-btn">
             </div>

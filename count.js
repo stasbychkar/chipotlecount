@@ -79,7 +79,7 @@ function count(input) {
                 var num = parseFloat(part.trim());
                 sum += num;
             });
-            return sum;
+            return parseInt(sum);
         } else {
             return 0;
         }
