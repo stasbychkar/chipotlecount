@@ -10,4 +10,4 @@
 ## 🚀 Getting Started
 
 Try the live version here:  
-👉 [Live Demo]([https://your-deployment-link.com](https://chipotlecount.netlify.app/))
+👉 [Live Demo](https://chipotlecount.netlify.app/)
