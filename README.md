@@ -1,6 +1,6 @@
 # 🌯 ChipotleCount
 
-**ChipotleCount** is a web application that helps Chipotle mangers to count critical items and cash drawers every night.
+**ChipotleCount** is a web application that helps Chipotle managers to count critical items and cash drawers every night.
 
 ## 🔧 Technologies Used
 
